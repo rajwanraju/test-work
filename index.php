@@ -86,25 +86,25 @@ $dom = new DOMDocument();
 @$dom->loadHTML($html);
 
 
-// foreach($dom->getElementsByTagName('a') as $link) {
+foreach($dom->getElementsByTagName('a') as $link) {
       
 
 
 
-//      // $message = $info->addData($link->getAttribute('href'));
-//         $data = $link->getAttribute('href');
-//       echo  $info = htmlentities($data);
+     // $message = $info->addData($link->getAttribute('href'));
+        $data = $link->getAttribute('href');
+      echo  $info = htmlentities($data);
 
-//         echo "<br />";
-// }
+        echo "<br />";
+}
 
 
-// $images = $dom->getElementsByTagName('img');
-// foreach($images as $image){
-//         $img = $image->getAttribute('src');
-//      // $image = $addImage->addImage($image->getAttribute('src'));
-//         echo $img."</br>";
-// }
+$images = $dom->getElementsByTagName('img');
+foreach($images as $image){
+        $img = $image->getAttribute('src');
+     // $image = $addImage->addImage($image->getAttribute('src'));
+        echo $img."</br>";
+}
 
 
 //  $content = file_get_contents('https://bootsnipp.com/tags/4.1.1');
